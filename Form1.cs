@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+ttt
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -28,16 +29,16 @@ namespace WindowsFormsApp1
             try
             {
                 var o = WindowsIdentity.GetCurrent().User.Value;
-
+ttt
                 Logger.Trace("My Trace");
                 Logger.Debug("My Debug");
                 Logger.Info("My Info");
                 Logger.Error("My Error");
                 Logger.Warn("My Warn");
 
-
+ttt
                 throw new Exception("My Error");
-
+ttt
                 // System.Console.ReadKey();
             }
             catch (Exception ex)
@@ -46,7 +47,7 @@ namespace WindowsFormsApp1
             }
             // NLog.LogManager.Shutdown();
         }
-
+ttt
         private DateTime _dt = DateTime.Now.AddDays(-10);
         private void timer1_Tick(object sender, EventArgs e)
         {
